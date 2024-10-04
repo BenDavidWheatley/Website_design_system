@@ -1,0 +1,69 @@
+/***********  GENERAL STYLES ***********/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sectionContainers {
+    padding: 50px 2.5%;
+}
+.sectionsInnerContainer{
+    width: 100%;
+    background-color: red;
+    height: auto;
+}
+.contentContainer{
+    height: auto;
+    width: 49%;
+    min-width: 450px;
+    background-color: gray;
+}
+.contentInnerContainer {
+    width: 100%;
+    gap: 5px;
+}
+
+/*********** COLOR SECTION STYLES ***********/
+
+/* general styling for the colors section */
+
+.color {
+    width: 30%;
+    min-width: 150px;
+    height: auto;
+    background-color:white
+}
+.colorExample {
+    width: 100%;
+    height: 100px;
+}
+/*primary Colors*/
+
+#firstPrimaryColor div{
+    background-color: pink;
+}
+#secondPrimaryColor div{
+    background-color: yellow;
+}
+#thirdPrimaryColor div {
+    background-color: green;
+}
+
+/*secondary colors */
+
+
+
+/*********** TYPOGRAPHY SECTION STYLES ***********/
+
+
+.fontContainer {
+    
+
+}
