@@ -8,9 +8,10 @@
 
 <figure>
     <img src='media/codecademyExample.png'>
-    <figcaption>Example of the project by Codedemy</figcaption>
+    <figcaption>Example of the project by CodeCademy</figcaption>
 </figure>
-
+<br>
+<br>
 <figure>
     <img src='media/myExample.png'>
     <figcaption>Example of my version of the project</figcaption>
