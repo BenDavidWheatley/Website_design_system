@@ -1,157 +1,242 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Web Design System</title>
-        <link href="styles/style.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link href="styles/style.css" rel="stylesheet" type="text/css"> 
     </head>
 
-    <body>
-        
-        <!-- Page title -->
+    <body>   
+        <main>
+            <h1>Website Style Guide</h1>
+            <!------- COLOR SECTION START ------->
+            <section class="sectionContainers">
+                <h2 class="sectionHeadings">01 - Colors</h2>
+                <!-- The container that will house the two inner containers-->
+                <div class="sectionsInnerContainer flex">
+                    <!-- These are the two smaller containers that hold the content of the primary and secondary colors-->
 
-        <!-- Colors section -->
-         <section class="sectionContainers">
-
-            <h2 class="sectionHeadings">01 - Colors</h2>
-
-            <!-- The container that will house the two inner containers-->
-            <div class="sectionsInnerContainer flex">
-
-                <!-- These are the two smaller containers that hold the content of the primary and secondary colors-->
-                <section class="contentContainer">
-
-                    <h3>Primary Colors</h3>
-
-                    <!-- Content inner containers house the three color blocks-->
-                    <div class="contentInnerContainer flex">
-
-                        <div class="color" id="firstPrimaryColor">
-                            <div class="colorExample">
-                            <!-- This div will show the color -->
+                    <!-- primary color start -->
+                    <section class="contentContainer">
+                        <h3>Primary Colors</h3>
+                        <!-- Content inner containers house the three color blocks-->
+                        <div class="contentInnerContainer flex">
+                            <div class="color" id="firstPrimaryColor">
+                                <div class="colorExample">
+                                <!-- This div will show the color -->
+                                </div>
+                                <p class="hex"><strong>Hex:</strong> #2F5061</p>
+                                <p class="rgb"><strong>RGB:</strong> 47, 80, 97</p>
+                                <p class="hsl"><strong>HSL:</strong> 200.4, 34.7%, 28.2%</p>
                             </div>
-                            <p class="hex">Hex: #8d8d8d</p>
-                            <p class="rgb">RGB: 240, 80, 22</p>
-                            <p class="hsl">HSL: 182 82 22</p>
-                        </div>
 
-                        <div class="color" id="secondPrimaryColor">
-                            <div class="colorExample">
-                            <!-- This div will show the color -->
+                            <div class="color" id="secondPrimaryColor">
+                                <div class="colorExample">
+                                <!-- This div will show the color -->
+                                </div>
+                                <p class="hex"><strong>Hex:</strong> #E57F84</p>
+                                <p class="rgb"><strong>RGB:</strong> 229, 127, 132</p>
+                                <p class="hsl"><strong>HSL:</strong> 357.1, 66.2%, 69.8%</p>
                             </div>
-                            <p class="hex">Hex: #8d8d8d</p>
-                            <p class="rgb">RGB: 240, 80, 22</p>
-                            <p class="hsl">HSL: 182 82 22</p>
-                        </div>
-                        
-                        <div class="color" id="thirdPrimaryColor">
-                            <div class="colorExample">
-                            <!-- This div will show the color -->
+
+                            <div class="color" id="thirdPrimaryColor">
+                                <div class="colorExample">
+                                <!-- This div will show the color -->
+                                </div>
+                                <p class="hex"><strong>Hex:</strong> #f4eae6</p>
+                                <p class="rgb"><strong>RGB:</strong> 244, 234, 230</p>
+                                <p class="hsl"><strong>HSL:</strong> 17.1, 38.9%, 92.9%</p>
+                            </div> 
+                        </div>                    
+                    </section>
+                    <!-- primary color end -->
+
+                    <!-- Secondary color start -->
+                    <section class="contentContainer">
+                        <h3>Secondary Colors</h3>
+                        <!-- Content inner containers house the three color blocks-->
+                        <div class="contentInnerContainer flex">
+                            <div class="color" id="firstSecondaryColor">
+                                <div class="colorExample">
+                                <!-- This div will show the color -->
+                                </div>
+                                <p class="hex"><strong>Hex:</strong> #4297a0</p>
+                                <p class="rgb"><strong>RGB:</strong> 66, 151, 160</p>
+                                <p class="hsl"><strong>HSL:</strong> 185.7, 41.6%, 44.3%</p>
                             </div>
-                            <p class="hex">Hex: #8d8d8d</p>
-                            <p class="rgb">RGB: 240, 80, 22</p>
-                            <p class="hsl">HSL: 182 82 22</p>
-                        </div> 
-                    </div>                    
-                </section>
-                <section class="contentContainer">
 
-                </section>
-            </div>
-         </section>
+                            <div class="color" id="secondSecondaryColor">
+                                <div class="colorExample">
+                                <!-- This div will show the color -->
+                                </div>
+                                <p class="hex"><strong>Hex:</strong> #343E3D</p>
+                                <p class="rgb"><strong>RGB:</strong> 52, 62, 61</p>
+                                <p class="hsl"><strong>HSL:</strong> 174, 8.8%, 22.4%</p>
+                            </div>
+                            
+                            <div class="color" id="thirdSecondaryColor">
+                                <div class="colorExample">
+                                <!-- This div will show the color -->
+                                </div>
+                                <p class="hex"><strong>Hex:</strong> #969A97</p>
+                                <p class="rgb"><strong>RGB:</strong> 150, 154, 151</p>
+                                <p class="hsl"><strong>HSL:</strong> 135, 1.9%, 59.6%</p>
+                            </div> 
+                        </div>                    
+                    </section>
+                    <!-- Secondary color end -->
+                </div>
+            </section>
 
-        <!-- Font section -->
+            <!------- COLOR SECTION END ------->
 
-        <section class="sectionContainers">
-            <h2 class="sectionHeadings">02 - typography</h2>
-            <div class="">
+            <!-------FONT SECTION START------->
 
-                <h3>Fonts</h3>
-                <section class="fontContainer flex">
-                    <div>
-                        <p>AaBbCc</p>
-                        <p>Name of the font</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                    </div>
-                    <div>
-                        <p>AaBbCc</p>
-                        <p>Name of the font</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                    </div>          
-                </section>
+            <section class="sectionContainers">
+                <h2 class="sectionHeadings">02 - typography</h2>
+                <!--First font start-->
+                <div class="fontOuterContainer">
+                    <h3>Font - <span class='bono h3'>Bono nova SC</span></h3>
+                    <section class="fontContainer flex">
+                        <div>
+                            <p class="abc bono">AaBbCc</p>
+                            <p class="bono"><strong>Name: </strong>Bono Nova</p>
+                            <p class="bono">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum velit et quam molestie, luctus laoreet felis mollis. In tincidunt leo vitae nunc accumsan sodales. Proin convallis, elit non iaculis rhoncus, ante nisi aliquam est, eu finibus metus leo volutpat ipsum. Suspendisse quis eros magna. Vestibulum non lectus fermentum, euismod augue vel, ultrices diam. Ut et dapibus nisi. Suspendisse posuere cursus sapien, eget luctus orci volutpat sed. Etiam porttitor viverra leo sit amet lobortis. Sed sit amet nulla eu felis blandit ultricies maximus ut diam. Phasellus faucibus massa libero, a mattis diam sodales ut. Nullam egestas vulputate risus quis lobortis. Curabitur tempus pulvinar nisi at tincidunt. Nam quam nisi, mollis tempus placerat ut, hendrerit eget augue.</p>
+                        </div>         
+                    </section>
+                    
+                    <section class="fontContainer firstFontContainer">
+                        <h3>Font Styles</h3>
+                        <div class="flex fontExamples">
+                            <div class="fontDescriptions">                  
+                                <p class="h1">H1</p>
+                                <p><strong>Font weight: </strong>500</p>
+                                <p><strong>Font size: </strong>36px</p>
+                                <p><strong>Font Family: </strong>Bono Nova SC</p>
+                            </div>   
+                         
+                            <div class="fontDescriptions">                          
+                                <p class="h2">H2</p>
+                                <p><strong>Font weight: </strong>400</p>
+                                <p><strong>Font size: </strong>28px</p>
+                                <p><strong>Font Family: </strong>Bono Nova SC</p>
+                            </div>  
 
-                <h3>Font Styles</h3>
-                <section class="fontContainer">
-                    <div class="flex">
-                        <div class="">
-                            <p>H1</p>
-                            <p>Font weight:</p>
-                            <p>Font size: </p>
-                            <p>Font Family:</p>
+                            <div class="fontDescriptions">                          
+                                <p class="h3 bono">H3</p>
+                                <p><strong>Font weight: </strong>300</p>
+                                <p><strong>Font size: </strong>18px</p>
+                                <p><strong>Font Family: </strong>Bono Nova SC</p>
+                            </div>  
+                       
                         </div>
-                        <div class="">
-                            <p>H2</p>
-                            <p>Font weight:</p>
-                            <p>Font size: </p>
-                            <p>Font Family:</p>
+                        <div class="flex fontExamples">
+                            <div class="fontDescriptions">  
+                                <p class="paraReg">Paragraph Regular</p>
+                                <p><strong>Font weight: </strong>400</p>
+                                <p><strong>Font size: </strong>12px</p>
+                                <p><strong>Font Family: </strong>Bono Nova SC</p>
+                            </div>
+                            <div class="fontDescriptions">  
+                                <p class="paraBold">Paragraph Bold</p>
+                                <p><strong>Font weight: </strong>800</p>
+                                <p><strong>Font size: </strong>12px</p>
+                                <p><strong>Font Family: </strong>Bono Nova SC</p>
+                            </div>
+                            <div class="fontDescriptions">  
+                                <p class="paraItalic">Paragraph Italic</p>
+                                <p><strong>Font weight: </strong>400</p>
+                                <p><strong>Font size: </strong>12px</p>
+                                <p><strong>Font Family: </strong>Bono Nova SC</p>
+                            </div>
                         </div>
-                        <div class="">
-                            <p>H3</p>
-                            <p>Font weight:</p>
-                            <p>Font size: </p>
-                            <p>Font Family:</p>
+
+                    </section>
+                </div>
+                <!--First font end-->
+                <!--second font start-->
+                <div class="fontOuterContainer">
+
+                    <h3>Font - <span class='witi h3'>Wittgenstein</span></h3>
+                    <section class="fontContainer flex">
+                        <div>
+                            <p class="abc bono">AaBbCc</p>
+                            <p class="witi"><strong>Name: </strong>Wittgenstein</p>
+                            <p class="witi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum velit et quam molestie, luctus laoreet felis mollis. In tincidunt leo vitae nunc accumsan sodales. Proin convallis, elit non iaculis rhoncus, ante nisi aliquam est, eu finibus metus leo volutpat ipsum. Suspendisse quis eros magna. Vestibulum non lectus fermentum, euismod augue vel, ultrices diam. Ut et dapibus nisi. Suspendisse posuere cursus sapien, eget luctus orci volutpat sed. Etiam porttitor viverra leo sit amet lobortis. Sed sit amet nulla eu felis blandit ultricies maximus ut diam. Phasellus faucibus massa libero, a mattis diam sodales ut. Nullam egestas vulputate risus quis lobortis. Curabitur tempus pulvinar nisi at tincidunt. Nam quam nisi, mollis tempus placerat ut, hendrerit eget augue.</p>
+                        </div>         
+                    </section>
+                    
+                    <section class="fontContainer secondFontContainer">
+                        <h3>Font Styles</h3>
+                        <div class="flex fontExamples">
+                            <div class="fontDescriptions">                  
+                                <p class="h1">H1</p>
+                                <p><strong>Font weight: </strong>500</p>
+                                <p><strong>Font size: </strong>36px</p>
+                                <p><strong>Font Family: </strong>Wittgenstein</p>
+                            </div>   
+                         
+                            <div class="fontDescriptions">                          
+                                <p class="h2">H2</p>
+                                <p><strong>Font weight: </strong>400</p>
+                                <p><strong>Font size: </strong>28px</p>
+                                <p><strong>Font Family: </strong>Wittgenstein</p>
+                            </div>  
+
+                            <div class="fontDescriptions">                          
+                                <p class="h3 bono">H3</p>
+                                <p><strong>Font weight: </strong>300</p>
+                                <p><strong>Font size: </strong>18px</p>
+                                <p><strong>Font Family: </strong>Wittgenstein</p>
+                            </div>                    
                         </div>
-                    </div>
-                    <div class="flex">
-                        <div class="">
-                            <p>Paragraph Regular</p>
-                            <p>Font weight:</p>
-                            <p>Font size: </p>
-                            <p>Font Family:</p>
+                        <div class="flex fontExamples">
+                            <div class="fontDescriptions">  
+                                <p class="paraReg">Paragraph Regular</p>
+                                <p><strong>Font weight: </strong>400</p>
+                                <p><strong>Font size: </strong>12px</p>
+                                <p><strong>Font Family: </strong>Wittgenstein</p>
+                            </div>
+
+                            <div class="fontDescriptions">  
+                                <p class="paraBold">Paragraph Bold</p>
+                                <p><strong>Font weight: </strong>800</p>
+                                <p><strong>Font size: </strong>12px</p>
+                                <p><strong>Font Family: </strong>Wittgenstein</p>
+                            </div>
+
+                            <div class="fontDescriptions">  
+                                <p class="paraItalic">Paragraph Italic</p>
+                                <p><strong>Font weight: </strong>400</p>
+                                <p><strong>Font size: </strong>12px</p>
+                                <p><strong>Font Family: </strong>Wittgenstein</p>
+                            </div>
                         </div>
-                        <div class="">
-                            <p>Paragraph Bold</p>
-                            <p>Font weight:</p>
-                            <p>Font size: </p>
-                            <p>Font Family:</p>
-                        </div>
-                        <div class="">
-                            <p>Paragraph Italic</p>
-                            <p>Font weight:</p>
-                            <p>Font size: </p>
-                            <p>Font Family:</p>
-                        </div>
-                    </div>
+                    </section>
+                </div>
+                <!--second font end-->
+            </section>
 
-                </section>
-            </div>
-         </section>
+            <!------- FONT SECTION END ------->
 
-        <!-- buttons section -->
+            <!------- BUTTON SECTION START -------->
 
-        <section class="sectionContainers">
-            <h2 class="sectionHeadings">03 - Buttons</h2>
-            <!-- The container that will house the two inner containers-->
-            <div class="sectionsInnerContainer flex">
-                <!-- These are the two smaller containers that hold the content of the primary and secondary colors-->
-                <section class="contentContainer">
-                    <h3>Primary Buttons</h3>
-                    <!-- Content inner containers house the three color blocks-->
-                    <div class="contentInnerContainer flex">
-                        <button>Button</button>
-                        <button>Button</button>
-                    </div>                    
-                </section>
-                <section class="contentContainer">
-                    <h3>Secondary Buttons</h3>
-                    <!-- Content inner containers house the three color blocks-->
-                    <div class="contentInnerContainer flex">
-                        <button>Button</button>
-                        <button>Button</button>
-                    </div>                    
-                </section>
-            </div>
-         </section>
-
-
+            <section class="sectionContainers">
+                <h2 class="sectionHeadings">03 - Buttons</h2>           
+                <section class="buttonInnerContainer flex">
+                    <button class="button">Button</button>
+                    <button class="button">Button</button>
+                    <button class="button"><span>Button</span></button>
+                    <button class="button">Button</button>
+                </section>                          
+            </section>
+             <!------- BUTTON SECTION END -------->
+        </main>
     </body>
 </html>

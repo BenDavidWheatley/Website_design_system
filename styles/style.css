@@ -1,13 +1,41 @@
-/***********  GENERAL STYLES ***********/
+/***********  GENERAL STYLES START ***********/
 
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 12px;
+    font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+body{
+    padding: 60px;
+}
+main{
+    max-width: 1180px;
+    margin: auto;
+}
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+h1{
+    font-size: 26px;
+    margin: auto;
+    text-align: center;
+}
+h2{
+    font-size: 21px;
+}
+h3{
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 50px; 
 }
 .flex {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -16,21 +44,38 @@
 }
 .sectionsInnerContainer{
     width: 100%;
-    background-color: red;
     height: auto;
 }
 .contentContainer{
     height: auto;
-    width: 49%;
+    width: 46%;
     min-width: 450px;
-    background-color: gray;
 }
 .contentInnerContainer {
     width: 100%;
     gap: 5px;
 }
+.sectionHeadings {
+    border-bottom: 1px solid black;
+}
 
-/*********** COLOR SECTION STYLES ***********/
+/* general media queries */
+@media only screen and (max-width: 1180px)  {
+.contentContainer:nth-child(1), .contentContainer:nth-child(2){
+    width: 100%;
+}
+}
+@media only screen and (max-width: 620px){
+    body {
+        padding: 2.5%;
+        width: 100%;
+    }
+}
+
+
+/***********  GENERAL STYLES END ***********/
+
+/*********** COLOR SECTION STYLES START ***********/
 
 /* general styling for the colors section */
 
@@ -43,27 +88,211 @@
 .colorExample {
     width: 100%;
     height: 100px;
+    border: 1px dotted black;
+    margin-bottom: 15px;
 }
+@media only screen and (max-width: 604px)  {
+    .color{
+        width: 50%;
+        min-width: 0px;
+    }
+    }
 /*primary Colors*/
 
 #firstPrimaryColor div{
-    background-color: pink;
+    background-color:#2f5061;
 }
 #secondPrimaryColor div{
-    background-color: yellow;
+    background-color: #e57f84;
 }
 #thirdPrimaryColor div {
-    background-color: green;
+    background-color: #f4eae6;
 }
 
 /*secondary colors */
 
 
-
-/*********** TYPOGRAPHY SECTION STYLES ***********/
-
-
-.fontContainer {
-    
-
+#firstSecondaryColor div{
+    background-color:#4297a0;
 }
+#secondSecondaryColor div{
+    background-color: #343E3D;
+}
+#thirdSecondaryColor div {
+    background-color: #969A97;
+}
+
+/*********** COLOR SECTION STYLES END ***********/
+
+/*********** TYPOGRAPHY SECTION STYLES START ***********/
+
+
+.abc {
+    font-weight: 600;
+    font-size: 21px;
+}
+.fontContainer div{ 
+    margin-bottom: 20px;
+}
+.fontExamples{
+    display: flex;
+    justify-items: space-between;
+}
+.fontDescriptions{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    justify-items: end;
+    width: 20%;
+    min-width: 200px;
+    height: auto;
+    margin: 10px
+}
+.firstFontContainer .fontExamples .fontDescriptions p, .bono{
+    font-family:  "Bona Nova SC", serif;
+}
+.secondFontContainer .fontExamples .fontDescriptions p, .witi {
+    font-family: "Wittgenstein", serif;
+}   
+.h1{
+    font-size: 36px;
+    font-weight: 500;
+}
+.h2{
+    font-size: 28px;
+    font-weight: 400;
+}
+.h3{
+    font-size: 18px;
+    font-weight: 300;
+}
+.paraReg, .paraBold, .paraItalic {
+    margin-bottom: 10px;
+}
+.paraBold{
+    font-weight: 800;
+}
+.paraItalic {
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/*********** TYPOGRAPHY SECTION STYLES  ***********/
+
+/************* BUTTONS STYLING START *************/
+
+/* General button styles */
+
+.buttonInnerContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 50px auto 50px auto;
+}
+
+.button {
+    width: 220px;
+    height: 60px;
+    border: none;
+    margin:auto;
+}
+
+/* Button media queries for general styles */
+@media only screen and (max-width: 1180px){
+    .buttonInnerContainer{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 920px){
+    .buttonInnerContainer{
+        width: 90%;
+    }
+}
+
+/* First Button */
+
+.button:nth-child(1){
+    background-color: #2f5061;
+    color: #f4eae6;
+    transition: all 1s;
+}
+.button:nth-child(1):hover{
+    background-color: #f4eae6;
+    color: #2f5061;
+    transition: all 1s;
+}
+.button:nth-child(1):active{
+    background-color: #2f5061;
+    color: #f4eae6;
+    transition: all 0s;
+}
+
+
+/* Second button */
+
+.button:nth-child(2){
+    background-color: #e57f84;
+    color: #f4eae6;  
+    transition: all 1s; 
+}
+.button:nth-child(2):hover{
+    border-radius: 10px;
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 10px #2f5061; 
+    transition: all 0.2s;
+}
+.button:nth-child(2):active{
+    background-color: #e57f84;
+    color: #f4eae6; 
+    box-shadow: none; 
+    transform: translateY(0px);
+    transition: all 0s;
+}
+
+
+/* Third Button */
+
+.button:nth-child(3){
+   /* background-color: #4297a0; */
+    color: #f4eae6;
+    background-color: #4297a0;
+    border: 20px solid #4297a0;
+    transition: all 0.5s;
+}
+.button:nth-child(3):hover{
+    /* background-color: #4297a0; */
+     color: #4297a0;
+     background-color: #f4eae6;
+     border: 1px solid #4297a0;
+     transition: all 0.5s;
+ }
+ .button:nth-child(3):active{
+    border: none;
+    text-shadow: 5px 5px 5px #2f5061;
+    transition: all 0.1s;
+ }
+
+
+/* Forth Button */
+
+.button:nth-child(4) {
+    border-radius: 0px 20px 0px 20px;
+    background-color: #343E3D;
+    color: #f4eae6;
+    transition: all 0.6s;
+ }
+.button:nth-child(4):hover {
+    border-radius: 20px 0px 20px 0px;
+    background-color: #f4eae6;
+    color: #343E3D;
+    transition: all 0.6s;
+ }
+.button:nth-child(4):active {
+    border-radius: 20px 20px 20px 20px;
+    background-color: #343E3D;
+    color: #f4eae6;
+    transition: all 0.1s;  
+}
+
+/************* BUTTONS STYLING END *************/
