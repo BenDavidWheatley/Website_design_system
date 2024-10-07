@@ -7,12 +7,12 @@
 <p><em>In this project, you’ll be building your own basic design system for a website. In essence, you’ll be building a website to help you build MORE websites in the future! On your site, you’ll collect all the colors, fonts, and some of the repeating styles.</em></p>
 
 <figure>
-    <img src='media/Website_design_system/media/Screenshot 2024-10-07 at 10.54.32.png'>
+    <img src='media/codecademyExample.png'>
     <figcaption>Example of the project by Codedemy</figcaption>
 </figure>
 
 <figure>
-    <img src='media/Website_design_system/media/Screenshot 2024-10-07 at 10.57.39.png'>
+    <img src='media/myExample.png'>
     <figcaption>Example of my version of the project</figcaption>
 </figure>
     
